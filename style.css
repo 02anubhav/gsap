@@ -76,3 +76,40 @@ img{
 #img2 {
   rotate: 10deg;
 }
+
+#bottom{
+  border-top: 1.5px solid rgb(255, 255, 255);
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+  margin-top: 90px;
+  height: 30px;
+  width: 100%;
+  /* background-color: aqua; */
+  font-family: sans-serif;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#bottom::-webkit-scrollbar{
+  display: none;
+}
+#bottom h3{
+  opacity: 0.6;
+  padding-left: 40px;
+  display: inline-block;
+  font-style: italic;
+  font-size: 12px;
+  animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 45px));
+  }
+}
